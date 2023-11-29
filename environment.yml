@@ -1,0 +1,10 @@
+name: artic-ncov2019
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - artic=1.2.1
+  - artic-network::rampart=1.2.0
+  - snakemake-minimal=5.8.1
+  - muscle=3.8.1551
