@@ -20,7 +20,7 @@ done
 
 for i in ./*
 do
-artic minion --no-frameshifts --normalise 300 --threads 32  --scheme-directory ${ROOT}/artic-ncov2019/primer_schemes/ --read-file $(basename $i)/$(basename $i).fastq --fast5-directory $OX_PATH/fast5_pass/$(basename $i) --sequencing-summary $OX_PATH/sequencing_summary*txt nCoV-2019/V1200 $(basename $i)
+artic minion --no-frameshifts --normalise 300 --threads $2  --scheme-directory ${ROOT}/artic-ncov2019/primer_schemes/ --read-file $(basename $i)/$(basename $i).fastq --fast5-directory $OX_PATH/fast5_pass/$(basename $i) --sequencing-summary $OX_PATH/sequencing_summary*txt nCoV-2019/V1200 $(basename $i)
 done
 
 mkdir final
